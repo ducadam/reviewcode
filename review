@@ -12,7 +12,7 @@ class Node {
 	}
 }
 
-public class minhduc1220 {
+public class review {
 	Node head, cuoi;
 
 	void nhap() {
@@ -137,16 +137,17 @@ public class minhduc1220 {
 		minhduc1220 L = new minhduc1220();
 		L.nhap();
 		L.in();
-		System.out.println("Tong cac so le: " + L.tongLe());
+		System.out.println("Tong cac so le: " + L.tongle());
 		L.xoaKeCuoi();
 		L.in();
-		System.out.println("So doan tang dan: " + L.demDoanTang());
+		System.out.println("So doan tang dan: " + L.demdoantang());
 		L.xoaSoLe();
 		L.in();
 		L.sapXepTang();
 		L.in();
-		L.daoDanhSach();
+		L.daoDanhsach();
 		L.in();
 	}
 }
+
 
