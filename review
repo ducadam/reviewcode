@@ -15,7 +15,6 @@ class Node {
 public class minhduc1220 {
 	Node head, cuoi;
 
-	// 1. Nhập danh sách liên kết
 	void nhap() {
 		head = cuoi = null;
 		Scanner kb = new Scanner(System.in);
@@ -35,7 +34,6 @@ public class minhduc1220 {
 		}
 	}
 
-//2. In danh sách liên kết
 	void in() {
 		System.out.print("IN DANH SACH : ");
 		Node p = head;
@@ -58,7 +56,6 @@ public class minhduc1220 {
 		return s;
 	}
 
-//5. Xóa nốt kế cuối trong danh sách
 	void xoaKeCuoi() {
 		if (head == null || head.next == null) {
 			System.out.println("Khong du phan tu de xoa!");
@@ -72,8 +69,7 @@ public class minhduc1220 {
 		p.next = null;
 		cuoi = p;
 	}
-
-//6. Đếm có bao nhiêu đoạn gồm các số tăng dần trong danh sách. Ví dụ với danh sách-->3-->4-->1-->5-->9-->3-->1-->2-->null thì có 4 đoạn tăng dần    
+   
 	int demDoanTang() {
 		if (head == null)
 			return 0;
@@ -89,7 +85,6 @@ public class minhduc1220 {
 		return dem;
 	}
 
-//7. Xóa tất cả các số lẻ ra khỏi danh sách
 	void xoaSoLe() {
 		while (head != null && head.data % 2 != 0) {
 			head = head.next;
@@ -111,7 +106,6 @@ public class minhduc1220 {
 		cuoi = p;
 	}
 
-//8. Sắp xếp danh sách tăng dần
 	void sapXepTang() {
 		for (Node p = head; p != null; p = p.next) {
 			for (Node q = p.next; q != null; q = q.next) {
@@ -124,7 +118,6 @@ public class minhduc1220 {
 		}
 	}
 
-//9. Đảo danh sách
 	void daoDanhSach() {
 		Node prev = null;
 		Node cur = head;
@@ -156,3 +149,4 @@ public class minhduc1220 {
 		L.in();
 	}
 }
+
